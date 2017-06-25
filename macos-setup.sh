@@ -73,13 +73,14 @@ casks=(
   atom
 	avast-mac-security
 	github-desktop
-	xquartz
-	inkscape
+#	xquartz
+#	inkscape
  	flux
 	google-chrome
-	google-play-music-desktop-player
+#	google-play-music-desktop-player
 # microsoft-office
   spectacle
+	webcatalog
 )
 
 brew cask install ${casks[@]}
