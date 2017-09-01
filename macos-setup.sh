@@ -92,8 +92,8 @@ echo_warn "Configuring ruby..."
 # Add rbenv to bash so that it loads every time you open a terminal
 echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
 source ~/.bash_profile
-rbenv install 2.3.3
-rbenv global 2.3.3
+rbenv install 2.4.0 # check current version at https://pages.github.com/versions/
+rbenv global 2.4.0
 
 echo_ok "Ruby config:"
 gem env
