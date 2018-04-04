@@ -69,7 +69,7 @@ brew list
 echo_warn "Installing homebrew/casks..."
 casks=(
 # adobe-acrobat
-#	adobe-creative-cloud
+	adobe-creative-cloud
   atom
 	avast-mac-security
 	github-desktop
@@ -92,8 +92,8 @@ echo_warn "Configuring ruby..."
 # Add rbenv to bash so that it loads every time you open a terminal
 echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
 source ~/.bash_profile
-rbenv install 2.4.0 # check current version at https://pages.github.com/versions/
-rbenv global 2.4.0
+rbenv install 2.4.2 # check current version at https://pages.github.com/versions/
+rbenv global 2.4.2
 
 echo_ok "Ruby config:"
 gem env
@@ -109,7 +109,7 @@ gem list
 
 # node
 echo_warn "Configuring node,js..."
-nvm install v4.2
+nvm install 'lts/*'
 
 echo_ok "Node,js config:"
 nvm --version
