@@ -56,7 +56,7 @@ packages=(
   openshift-cli
   nvm
   rbenv
-	ruby-build
+  ruby-build
   yarn
   wget
 )
@@ -68,19 +68,19 @@ brew list
 # install homebrew/casks
 echo_warn "Installing homebrew/casks..."
 casks=(
-# adobe-acrobat
-	adobe-creative-cloud
+  adobe-creative-cloud
   atom
-	avast-mac-security
-	github-desktop
-#	xquartz
-#	inkscape
- 	flux
-	google-chrome
-#	google-play-music-desktop-player
-# microsoft-office
+  avast-mac-security
+  brave-browser
+  flux
+  github-desktop
+  google-chrome
   spectacle
-	webcatalog
+# adobe-acrobat
+# google-play-music-desktop-player
+# inkscape
+# microsoft-office
+# xquartz
 )
 
 brew cask install ${casks[@]}
@@ -92,8 +92,8 @@ echo_warn "Configuring ruby..."
 # Add rbenv to bash so that it loads every time you open a terminal
 echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
 source ~/.bash_profile
-rbenv install 2.4.2 # check current version at https://pages.github.com/versions/
-rbenv global 2.4.2
+rbenv install 2.5.3 # check current version at https://pages.github.com/versions/
+rbenv global 2.5.3
 
 echo_ok "Ruby config:"
 gem env
@@ -134,7 +134,7 @@ node --version
 #fi
 
 # cleanup homebrew
-brew cleanup && brew cask cleanup
+brew cleanup
 
 # cleanup gems
 gem cleanup

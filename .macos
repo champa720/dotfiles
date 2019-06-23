@@ -790,8 +790,18 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
 
 ###############################################################################
+# Brave Browser                                                               #
+###############################################################################
+
+# Make Brave's default private browsing
+# defaults write ~/Library/Preferences/com.brave.Browser IncognitoModeAvailability -integer 2
+
+###############################################################################
 # Google Chrome & Google Chrome Canary                                        #
 ###############################################################################
+
+# Make Chromes's default private browsing
+# defaults write ~/Library/Preferences/com.google.Chrome IncognitoModeAvailability -integer 2
 
 # Disable the all too sensitive backswipe on trackpads
 #defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
