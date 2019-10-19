@@ -26,7 +26,9 @@ print "Install starting. You may be asked for your password."
 if xcode-select -p; then
 	echo_ok "Xcode already installed"
 else
-	exit echo_error "XCode must be installed! (use the app store)"
+  echo_warn "XCode must be installed! (use the app store)"
+  xcode-select --install
+  exit echo_error "Restart required"
 fi
 
 # homebrew
