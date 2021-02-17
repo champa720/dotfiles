@@ -53,14 +53,14 @@ brew tap
 # install homebrew packages
 echo_warn "Installing homebrew/packages..."
 packages=(
-	cmatrix
   git
-  openshift-cli
   nvm
   rbenv
-  ruby-build
-  yarn
-  wget
+#	cmatrix
+# openshift-cli
+# ruby-build
+# wget
+# yarn
 )
 
 brew install ${packages[@]}
@@ -77,11 +77,16 @@ casks=(
   flux
   github-desktop
   google-chrome
-  spectacle
+  grammarly
+  loom
+  microsoft-office
+  rectangle # spectacle
+  slack
+  twine
+  zoom
 # adobe-acrobat
 # google-play-music-desktop-player
 # inkscape
-# microsoft-office
 # xquartz
 )
 
@@ -94,8 +99,8 @@ echo_warn "Configuring ruby..."
 # Add rbenv to bash so that it loads every time you open a terminal
 echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
 source ~/.bash_profile
-rbenv install 2.5.3 # check current version at https://pages.github.com/versions/
-rbenv global 2.5.3
+rbenv install 2.7.1 # check current version at https://pages.github.com/versions/
+rbenv global 2.7.1
 
 echo_ok "Ruby config:"
 gem env
