@@ -79,14 +79,19 @@ casks=(
   google-chrome
   grammarly
   loom
-  microsoft-office
+  microsoft-excel
+  microsoft-outlook
+  microsoft-powerpoint
+  microsoft-word
   rectangle # spectacle
   slack
+  soundflower
   twine
   zoom
 # adobe-acrobat
 # google-play-music-desktop-player
 # inkscape
+# microsoft-office
 # xquartz
 )
 
